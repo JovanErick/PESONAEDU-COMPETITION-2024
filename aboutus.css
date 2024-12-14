@@ -1,0 +1,38 @@
+
+main {
+	padding: 10px min(175px, 15vw);
+    display: flex;
+    flex-direction: column;
+}
+
+main .container-header {
+    display: flex;
+    flex-direction: column;
+}
+
+main .container-header h1 {
+    margin: auto;
+}
+main .container-header img {
+    margin: auto;
+    width: 20%;
+    aspect-ratio: 1;
+}
+
+main .content {
+    margin: auto;
+    text-align: justify;
+    width: 50%;
+    font-size: clamp(1rem, 5vw, 1.2rem);
+    line-height: 1.8;
+}
+
+@media screen and (max-width: 678px) {
+    main {
+        padding: 10px 0;
+    }
+
+    main .content {
+        width: 80%;
+    }
+}
