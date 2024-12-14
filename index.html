@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ride Instead of Driving</title>
+		<link rel="icon" href="image/LOGO ECOMOTION.png" />
+		<link rel="stylesheet" href="template.css" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="logo-container">
+					<img src="/Image/LOGO ECOMOTION.png" alt="Sekolah Kristoforus" />
+					<a href="index.html"><h1>ECOMOTION</h1></a>
+				</div>
+
+				<div class="menu" id="menu">
+					<a href="#"><p style="color: #4d9e00;">Beranda</p></a>
+					<a href="#slider"><p>Jelajahi</p></a>
+					<a href="#blog"><p>Blog</p></a>
+					<a href="#"><p>Tentang Kami</p></a>
+				</div>
+
+				<div class="hamburger" id="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<section id="main-header">
+				<h1>
+					Kurangi Polusi,<br />
+					Perbanyak Aksi.
+					<a href="#slider"
+						><i
+							class="fa-solid fa-arrow-down gerak"
+							id="arrow-down"
+							onclick="slideDown()"
+						></i
+					></a>
+				</h1>
+			</section>
+		</main>
+
+		<section id="slider">
+			<div class="slider">
+				<div class="slide active">
+					<img
+						src="https://pirg.org/wp-content/uploads/2022/07/AME-bike-lane-and-bus-Public-Domain-Green-Lane-Project-via-Flickr.jpg"
+						alt=""
+					/>
+					<div class="info">
+						<h2>Kenapa Bersepeda atau Naik Angkutan Umum?</h2>
+						<br />
+						<p>
+							Bersepeda atau naik angkutan umum adalah pilihan
+							transportasi ramah lingkungan yang dapat mengurangi
+							kemacetan dan polusi. Selain itu, bersepeda juga bermanfaat
+							untuk kesehatan, sementara angkutan umum menawarkan
+							kenyamanan tanpa harus mengemudi. Temukan lebih lanjut
+							tentang manfaatnya di sini.
+						</p>
+						<br />
+						<br />
+						<a href="article1.html" class="btn">Baca Selengkapnya</a>
+					</div>
+				</div>
+
+				<div class="slide">
+					<img
+						src="https://www.polygonbikes.com/wp-content/uploads/2024/08/Kepagian-298-1.jpg"
+						alt=""
+					/>
+					<div class="info">
+						<h2>Mulai dari Mana?</h2>
+						<br />
+						<p>
+							Mulai perjalanan ramah lingkungan dengan panduan praktis
+							kami! Temukan tips memilih sepeda, cara aman bersepeda, dan
+							panduan menggunakan transportasi umum seperti TransJakarta,
+							MRT, LRT, atau KRL. Semua yang Anda butuhkan untuk
+							mobilitas cerdas ada di sini!
+						</p>
+
+						<br />
+						<br />
+						<a href="article1.html" class="btn">Baca Selengkapnya</a>
+					</div>
+				</div>
+
+				<div class="slide">
+					<img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiPUIKIonsQAkxAHyvKO7PqPLksGu6FyA54A&s"
+						alt=""
+					/>
+					<div class="info">
+						<h2>Judul</h2>
+						<p>Ayam goreng karawaci</p>
+
+						<a href="article1.html" class="btn">Baca Selengkapnya</a>
+					</div>
+				</div>
+
+				<div class="arrow">
+					<div class="left-arrow">
+						<i class="fa-solid fa-chevron-left"></i>
+					</div>
+					<div class="right-arrow">
+						<i class="fa-solid fa-chevron-right"></i>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="calculator">
+			<div class="calculator">
+				<h1>Kalkulator <span style="color: #4d9e00">Jejak Karbon</span></h1>
+
+				<form id="carbon-form">
+					<div class="form-group">
+						<label for="miles-driven">Emisi Kendaraan</label>
+						<input
+							type="number"
+							id="miles-driven"
+							required
+							placeholder="Jarak yang ditempuh per minggu (km)"
+						/>
+					</div>
+
+					<div class="form-group">
+						<label for="electricity-consumption">Emisi Listrik</label>
+						<input
+							type="number"
+							id="electricity-consumption"
+							required
+							placeholder="Konsumsi listrik per bulan (kWh)"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="waste"> Emisi Sampah</label>
+						<input
+							type="number"
+							id="waste"
+							required
+							placeholder="Sampah yang dihasilkan per minggu (kg)"
+						/>
+					</div>
+
+					<button type="submit">Hitung</button>
+				</form>
+
+				<div class="result">
+					<p>
+						Perkiraan Jejak Karbon Anda adalah
+						<span id="carbon-output">0</span> kg CO2 per tahun
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="blog">
+			<div class="blog">
+				<h1>Artikel Terbaru</h1>
+				<br>
+				<div class="container">
+					<img src="https://cdn1-production-images-kly.akamaized.net/-67hL5TdJirvLSL2Dr33DgYC1mE=/640x360/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5046587/original/038384900_1733923808-48f01dc5-341f-4cf8-b42d-d85e10d99e96.jpg" alt="Gambar">
+					<div class="text">
+						<h4 class="hashtag">Cerita • #KendaraanListrik #GayaHidup
+						</h4>
+						<a href="blog1.html"><h2 class="title">Kendaraan Listrik dan Gaya Hidup Modern, Kisah Ditto dan Ayudia Menginspirasi Perubahan Ramah Lingkungan</h2></a>
+						<p class="content">Era baru gaya hidup modern semakin mengintegrasikan teknologi ramah lingkungan, salah satunya melalui pemanfaatan kendaraan listrik. Transformasi yang mengedepankan kenyamanan, efisiensi, dan keberlanjutan ini yang menjadi fokus utama Ditto Percussion dan Ayudia Bing Slamet dalam menjalani electrifying lifestyle mereka.</p>
+					</div>
+				</div>
+				<br>
+				<br>
+				<br>
+				<div class="container">
+					<img src="https://asset-2.tstatic.net/bangka/foto/bank/images/sarah_20161022_091551.jpg" alt="Gambar">
+					<div class="text">
+						<h4 class="hashtag">Cerita • #HobiSehat #GowesSantai
+						</h4>
+						<a href="blog2.html"><h2 class="title">Bersepeda: Hobi Maskulin yang Dikenal oleh Sarah Abdini</h2></a>
+						<p class="content">Bersepeda sering dianggap sebagai hobi yang identik dengan laki-laki, sehingga tidak banyak wanita yang tertarik untuk menggeluti dunia sepeda. Berbagai alasan kerap menjadi hambatan, seperti cuaca panas, polusi, hingga keterbatasan waktu. Namun, hal ini tidak berlaku bagi Sarah Abdini, yang lebih akrab dipanggil “Si Mbok.”</p>
+					</div>
+				</div>
+				<br>
+				<br>
+				<br>
+				<div class="container">
+					<img src="https://findingnature.org.uk/wp-content/uploads/2019/09/man-5068906_1280.jpg" alt="Gambar">
+					<div class="text">
+						<h4 class="hashtag">Cerita • #TransportasiHijau #RevolusiBersepeda
+						</h4>
+						<a href="blog3.html"><h2 class="title">Bersepeda: Tindakan Revolusioner di Dunia yang Didominasi Kendaraan Bermotor</h2></a>
+						<p class="content">Di dunia yang didominasi oleh kendaraan bermotor, bersepeda sering dianggap sebagai hal yang tidak biasa. 
+							Menurut sebuah kutipan yang saya temui di media sosial, yang berasal dari Amy Walker, salah seorang pendiri majalah Momentum, bersepeda “adalah tindakan revolusioner di dunia yang termotorisasi.” </p>
+					</div>
+				</div>
+				<br>
+				<br>
+				<br>
+				<div class="container">
+					<img src="Image/blog4-4.jpg" alt="Gambar">
+					<div class="text">
+						<h4 class="hashtag">Cerita • #Kesehatan #Olahraga
+						</h4>
+						<a href="blog4.html"><h2 class="title">Bersepeda Juga Bikin Sehat Mental Lho...</h2></a>
+						<p class="content">  Bersepeda, bermanfaat bagi kesehatan, rasanya bukan lah rahasia lagi. Melatih kekuatan otot dan fleksibilitas, membantu proses penurunan berat badan, hingga menjaga kesehatan kardiovaskular, adalah sebagian kecil dari banyaknya manfaat bersepeda. Tapi apakah para pembaca website Dinas Kesehatan DIY mengetahui, bahwa manfaatnya bukan hanya sehat secara fisik saja, melainkan mental juga?</p>
+					</div>
+				</div>
+				<br>
+				<br>
+				<br>
+				<div class="container">
+					<img src="https://cdn0-production-images-kly.akamaized.net/7PDm5wzwDxxQpbqioO_IpQ7gHOM=/0x254:2500x1663/1200x675/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/4194222/original/091489500_1665991922-GP1T1AST_PressMedia.jpg" alt="Gambar">
+					<div class="text">
+						<h4 class="hashtag">Cerita • #PerubahanIklim #Aksi
+						</h4>
+						<a href="blog5.html"><h2 class="title">Bersepeda dari Jakarta hingga Bali Membawa Pesan Dampak Nyata Krisis Iklim</h2></a>
+						<p class="content"> Menggaungkan pesan lebih luas terkait krisis iklim dapat dilakukan dengan berbagai cara, termasuk dengan bersepeda. Ini pula yang tergambar dalam aksi 'Chasing the Shadow' yang akan bersepeda dari Jakarta-Bandung-Semarang-Surabaya-Bali.</p>
+					</div>
+				</div>
+				<br>
+				<br>
+			</div>
+		</section>
+
+        <footer id="footer">
+			<div class="footer-logo">
+				<img src="Image/LOGO ECOMOTION WHITE.png" alt="" />
+			</div>
+
+			<div class="right-container">
+				<div class="right-column-container">
+					<h1>ECOMOTION</h1>
+
+					<div class="information">
+						<div class="footer-item">
+							<div class="footer-col footer-company">
+								<h3>Informasi</h3>
+								<hr class="line" />
+								<ul>
+									<li><a href="image-source.html">Tentang Kami</a></li>
+								</ul>
+							</div>
+
+							<div class="footer-col footer-social">
+								<h3>Kontak Kami</h3>
+								<hr class="line" />
+								<a
+									href="https://www.instagram.com/osis_smaxto1?igsh=MXVtM2RkMjhqZjZ0bw=="
+									><i class="fa-brands fa-instagram"></i
+								></a>
+								<a
+									href="https://www.tiktok.com/@osis_smaxto1?_t=8rczK0MXxHc&_r=1"
+									><i class="fa-brands fa-tiktok"></i
+								></a>
+								<a
+									href="https://www.youtube.com/@osissmast.kristoforus164/videos"
+									><i class="fa-brands fa-youtube"></i
+								></a>
+								<a href="https://kristo.sch.id/v2/"
+									><i class="fa-solid fa-globe"></i
+								></a>
+							</div>
+
+							<div class="footer-col footer-news">
+								<h3>Berita Terbaru</h3>
+								<hr class="line" />
+								<div class="email-input">
+									<form action="">
+										<input
+											type="email"
+											id="input"
+											name="email"
+											placeholder="Enter your email addres"
+										/>
+										<button type="submit">Register</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script src="script.js"></script>
+</html>

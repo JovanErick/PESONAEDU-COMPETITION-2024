@@ -1,0 +1,161 @@
+body {
+    overflow-x: hidden;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.blog {
+    padding: 10px min(175px, 15vw);
+    line-height: 1.8;
+}
+
+.blog h1 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem); /* Scalable heading size */
+    margin-bottom: clamp(10px, 2vw, 20px);
+    color: #000;
+    text-align: left;
+}
+
+.blog img {
+    display: block;
+    width: 100%;
+    max-width: 600px; /* Maintain max width */
+    border-radius: 10px;
+}
+
+.blog p {
+    width: 100%; /* Ensure it fits small screens */
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem); /* Responsive font size */
+    color: #555;
+    margin-bottom: clamp(10px, 2vw, 20px);
+    text-align: justify ;
+}
+
+.blog hr {
+    border: none;
+    border-top: 2px solid #ddd;
+    margin: clamp(10px, 2vw, 20px) 0;
+}
+
+.blog-container {
+    margin: auto;
+    margin-right: clamp(20px, 5vw, 200px); /* Dynamic margin for responsiveness */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.blog-card {
+    margin: auto;
+    width: clamp(80%, 85%, 90%); /* Scales with screen size */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: clamp(15px, 5vw, 30px) clamp(15px, 4vw, 25px); /* Responsive padding */
+}
+
+.blog-card img {
+    width: 100%;
+    padding-top: clamp(10px, 2vw, 15px);
+    border-radius: 10px;
+}
+
+.blog-card a {
+    display: inline-block;
+    margin-top: clamp(5px, 2vw, 15px);
+    text-decoration: none;
+    color: #4d9e00;
+}
+
+.blog-card a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1200px) {
+    section {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .blog {
+        padding: 0 min(20px, 10vw);
+        width: 90vw;
+        margin: auto;
+    }
+
+    .blog-container {
+        margin: auto;
+        width: 80%;
+    }
+
+    .blog-card {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .blog p {
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blog h1 {
+        font-size: clamp(1.2rem, 4vw, 1.8rem); /* Smaller heading for phones */
+    }
+
+    .blog-card {
+        padding: 10px 15px; /* Compact padding for smaller devices */
+    }
+
+    .blog img {
+        border-radius: 5px;
+    }
+
+    section {
+        gap: 10px; /* Reduce gap on small screens */
+    }
+
+    .blog-container {
+        gap: 15px; /* Compact gap for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .blog h1 {
+        font-size: 1.5rem;
+        text-align: center; /* Center-align header for small screens */
+    }
+
+    .blog p {
+        font-size: 0.9rem; /* Smaller font size for better readability */
+        text-align: justify;
+    }
+
+    .blog-container {
+        padding: 0 10px; /* Compact padding for edge-to-edge layout */
+    }
+
+    .blog-card {
+        padding: 10px; /* Reduce padding for small screens */
+        width: 100%; /* Full width */
+        margin: 0 auto;
+    }
+
+    .blog img {
+        max-width: 100%; /* Ensure the image doesn't overflow */
+        border-radius: 5px;
+    }
+
+    .blog hr {
+        margin: 10px 0;
+    }
+
+    section {
+        flex-direction: column; /* Always stack vertically for phones */
+        gap: 15px;
+    }
+}
