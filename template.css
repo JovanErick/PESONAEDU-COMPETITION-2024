@@ -337,3 +337,11 @@ footer .footer-news .email-input button {
 	-o-transform: scale(1.1);
 }
 
+@media screen and (max-width: 768px){
+  #upBtn {
+    right: 30px;
+    bottom: 30px;
+  }
+  
+
+}

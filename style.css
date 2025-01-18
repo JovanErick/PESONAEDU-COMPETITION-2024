@@ -351,13 +351,13 @@
   }
 
   .form-group input:focus {
-    height: 20vh;
+    height: 15vh;
   }
 
   .form-group input:focus::placeholder {
     position: absolute;
     top: 20px;
-    height: 20vh;
+    height: 15vh;
     text-wrap: wrap;
     resize: none;
   }
@@ -437,6 +437,7 @@
 
   .blog .container {
     flex-direction: column;
+	gap: 15px;
   }
 
   .blog .container .title,
