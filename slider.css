@@ -61,7 +61,7 @@ section {
 
     .blog {
         padding: 0 min(20px, 10vw);
-        width: 90vw;
+        width: 80vw;
         margin: auto;
     }
 }
@@ -90,11 +90,6 @@ section {
         font-size: 0.9rem;
     }
 
-    .blog {
-        padding: 0 10px;
-        width: 100%;
-    }
-
     .blog img {
         max-width: 100%;
         border-radius: 5px;
@@ -102,6 +97,5 @@ section {
 
     section {
         flex-direction: column;
-        gap: 15px;
     }
 }
