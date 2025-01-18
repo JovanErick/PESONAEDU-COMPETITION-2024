@@ -21,7 +21,7 @@
 			referrerpolicy="no-referrer"
 		/>
 	</head>
-	<body>
+	<body onscroll="showUpBtn()">
 		<header>
 			<nav>
 				<div class="logo-container">
@@ -120,21 +120,21 @@
 					membantu:
 				</p>
 
-				<ul>
-					<li>
-						Mengurangi Emisi Gas Rumah Kaca: Berkurangnya jumlah kendaraan
+				<p><ul>
+					<li>Mengurangi Emisi Gas Rumah Kaca: Berkurangnya jumlah kendaraan
 						bermotor di jalan raya secara langsung menurunkan emisi
 						karbon.
 					</li>
-					<li>
-						Meningkatkan Kualitas Udara: Penurunan polusi udara dapat
+					<li>Meningkatkan Kualitas Udara: Penurunan polusi udara dapat
 						berdampak positif terhadap kesehatan masyarakat.
+						
 					</li>
-					<li>
-						Mendorong Aktivitas Fisik: Bersepeda dan berjalan kaki
+					<li>Mendorong Aktivitas Fisik: Bersepeda dan berjalan kaki
 						meningkatkan kebugaran fisik individu.
+						
 					</li>
-				</ul>
+				</ul></p>
+
 				<br />
 
 				<p>
@@ -150,16 +150,16 @@
 
 				<p>
 					Referensi:
-					https://www.kompasiana.com/hen12684/665beae3ed64157c8f6381f2/car-free-day-gerakan-berkelanjutan-untuk-mengurangi-polusi-dan-meningkatkan-kesadaran-lingkungan
-					https://kumparan.com/teman-kumparan/profil-b2w-indonesia-komunitas-yang-ajak-bersepeda-ke-tempat-kerja-22RBZFdPJF8
-					https://www.liputan6.com/hot/read/5403555/apa-itu-world-car-free-day-ini-dampaknya-bagi-kesehatan-masyarakat
+					<a href="https://www.kompasiana.com/hen12684/665beae3ed64157c8f6381f2/car-free-day-gerakan-berkelanjutan-untuk-mengurangi-polusi-dan-meningkatkan-kesadaran-lingkungan">https://www.kompasiana.com/hen12684/665beae3ed64157c8f6381f2/car-free-day-gerakan-berkelanjutan-untuk-mengurangi-polusi-dan-meningkatkan-kesadaran-lingkungan</a><br>
+					<a href="https://kumparan.com/teman-kumparan/profil-b2w-indonesia-komunitas-yang-ajak-bersepeda-ke-tempat-kerja-22RBZFdPJF8">https://kumparan.com/teman-kumparan/profil-b2w-indonesia-komunitas-yang-ajak-bersepeda-ke-tempat-kerja-22RBZFdPJF8</a><br>
+					<a href="https://kumparan.com/teman-kumparan/profil-b2w-indonesia-komunitas-yang-ajak-bersepeda-ke-tempat-kerja-22RBZFdPJF8">https://www.liputan6.com/hot/read/5403555/apa-itu-world-car-free-day-ini-dampaknya-bagi-kesehatan-masyarakat</a>
 				</p>
-			<a href="index.html">Kembali</a>
+			<a href="index.html" class="backText"><p>Kembali</p></a>
 			</div>
 
 		</section>
 
-		<footer id="footer">
+        <footer id="footer">
 			<div class="footer-logo">
 				<img src="Image/LOGO ECOMOTION WHITE.png" alt="" />
 			</div>
@@ -207,9 +207,9 @@
 											type="email"
 											id="input"
 											name="email"
-											placeholder="Enter your email addres"
+											placeholder="Masukkan Email"
 										/>
-										<button type="submit">Register</button>
+										<button type="submit">Kirim</button>
 									</form>
 								</div>
 							</div>
@@ -218,6 +218,7 @@
 				</div>
 			</div>
 		</footer>
+		<button id="upBtn" onclick="backToTop()"><i class="fa-solid fa-arrow-up" id="upBtn-arrow"></i></button>
 	</body>
 	<script src="script.js"></script>
 </html>

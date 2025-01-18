@@ -8,7 +8,6 @@ section {
     align-items: flex-start;
 }
 
-
 .blog {
     padding: 10px min(175px, 15vw);
     line-height: 1.8;
@@ -74,6 +73,15 @@ section {
 
 .blog-card a:hover {
     text-decoration: underline;
+}
+
+.backText {
+    width: 100%;
+    text-align: right;
+}
+
+.blog p a {
+    color: #551A8B;
 }
 
 /* Media Queries for Responsiveness */

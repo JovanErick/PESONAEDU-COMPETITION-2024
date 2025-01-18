@@ -21,7 +21,7 @@
 			referrerpolicy="no-referrer"
 		/>
 	</head>
-	<body>
+	<body onscroll="showUpBtn()">
 		<header>
 			<nav>
 				<div class="logo-container">
@@ -251,7 +251,7 @@
 
 				<p>
 					Referensi:
-					https://blog.rodalink.com/id/begini-cara-memilih-sepeda-yang-tepat-buatmu/
+					<a href="https://blog.rodalink.com/id/begini-cara-memilih-sepeda-yang-tepat-buatmu/">https://blog.rodalink.com/id/begini-cara-memilih-sepeda-yang-tepat-buatmu/</a>
 				</p>
 
 				<hr />
@@ -382,8 +382,8 @@
 					setiap momen bersepeda!
 				</p>
 
-				<p>Referensi: https://www.ruparupa.com/blog/tips-bersepeda-aman/</p>
-			<a href="index.html">Kembali</a>
+				<p><a href="https://www.ruparupa.com/blog/tips-bersepeda-aman/">Referensi: https://www.ruparupa.com/blog/tips-bersepeda-aman/</a></p>
+			<a href="index.html" class="backText">Kembali</a>
 
 			</div>
 			
@@ -437,9 +437,9 @@
 											type="email"
 											id="input"
 											name="email"
-											placeholder="Enter your email addres"
+											placeholder="Masukkan Email"
 										/>
-										<button type="submit">Register</button>
+										<button type="submit">Kirim</button>
 									</form>
 								</div>
 							</div>
@@ -448,6 +448,7 @@
 				</div>
 			</div>
 		</footer>
+		<button id="upBtn" onclick="backToTop()"><i class="fa-solid fa-arrow-up" id="upBtn-arrow"></i></button>
 	</body>
 	<script src="script.js"></script>
 </html>

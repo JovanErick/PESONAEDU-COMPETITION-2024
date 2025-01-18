@@ -21,12 +21,12 @@
 			referrerpolicy="no-referrer"
 		/>
 	</head>
-	<body>
+	<body onscroll="showUpBtn()">
 		<header>
 			<nav>
 				<div class="logo-container">
 					<img src="Image/LOGO ECOMOTION.png" alt="Sekolah Kristoforus" />
-					<h1>ECOMOTION</h1>
+					<a href="index.html"><h1>ECOMOTION</h1></a>
 				</div>
 
 				<div class="menu" id="menu">
@@ -185,7 +185,7 @@
 					Refrensi:
 					https://www.indonesiana.id/read/176819/bersepeda-itu-revolusioner
 				</p>
-				<a href="index.html">Kembali</a>
+				<a href="index.html" class="backText">Kembali</a>
 			</div>
 
 			<div class="blog-container">
@@ -199,7 +199,7 @@
 						Bersepeda acap kali dianggap sebagai hobi yang maskulin
 						sehingga tidak banyak wanita yang menggeluti dunia sepeda...
 					</p>
-					<a href="blog2.html">Read More</a>
+					<a href="blog2.html">Baca Selengkapnya</a>
 				</div>
 
 				<div class="blog-card">
@@ -209,7 +209,7 @@
 						Bersepeda, bermanfaat bagi kesehatan, rasanya bukan lah
 						rahasia lagi...
 					</p>
-					<a href="blog4.html">Read More</a>
+					<a href="blog4.html">Baca Selengkapnya</a>
 				</div>
 
 				<div class="blog-card">
@@ -225,7 +225,7 @@
 						Menggaungkan pesan lebih luas terkait krisis iklim dapat
 						dilakukan dengan berbagai cara....
 					</p>
-					<a href="blog5.html">Read More</a>
+					<a href="blog5.html">Baca Selengkapnya</a>
 				</div>
 			</div>
 		</section>
@@ -278,9 +278,9 @@
 											type="email"
 											id="input"
 											name="email"
-											placeholder="Enter your email addres"
+											placeholder="Masukkan Email"
 										/>
-										<button type="submit">Register</button>
+										<button type="submit">Kirim</button>
 									</form>
 								</div>
 							</div>
@@ -289,6 +289,7 @@
 				</div>
 			</div>
 		</footer>
+		<button id="upBtn" onclick="backToTop()"><i class="fa-solid fa-arrow-up" id="upBtn-arrow"></i></button>
 	</body>
 	<script src="script.js"></script>
 </html>

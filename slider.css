@@ -6,8 +6,8 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 20px;
 }
-
 
 .blog {
     padding: 10px min(175px, 15vw);
@@ -17,7 +17,7 @@ section {
 }
 
 .blog h1 {
-    font-size: clamp(1.5rem, 3vw, 2.5rem); /* Scalable heading size */
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
     margin-bottom: clamp(10px, 2vw, 20px);
     color: #000;
     text-align: left;
@@ -26,16 +26,17 @@ section {
 .blog img {
     display: block;
     width: 100%;
-    max-width: 600px; /* Maintain max width */
+    max-width: 600px;
     border-radius: 10px;
 }
 
-.blog p {
-    width: 100%; /* Ensure it fits small screens */
-    font-size: clamp(0.9rem, 2.5vw, 1.2rem); /* Responsive font size */
+.blog p, .blog ul li {
+    width: 100%;
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
     color: #555;
     margin-bottom: clamp(10px, 2vw, 20px);
-    text-align: justify ;
+    text-align: justify;
+    word-wrap: break-word;
 }
 
 .blog hr {
@@ -43,11 +44,19 @@ section {
     border-top: 2px solid #ddd;
     margin: clamp(10px, 2vw, 20px) 0;
 }
+.blog p a {
+    color: #551A8B;
+    text-align: right;
+}
 
-/* Media Queries for Responsiveness */
-@media screen and (max-width: 1200px) {
+.blog ul li {
+    margin-bottom: 0;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
     section {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
     }
 
     .blog {
@@ -55,19 +64,11 @@ section {
         width: 90vw;
         margin: auto;
     }
-
-    .blog p {
-        text-align: justify;
-    }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .blog h1 {
-        font-size: clamp(1.2rem, 4vw, 1.8rem); /* Smaller heading for phones */
-    }
-
-    .blog-card {
-        padding: 10px 15px; /* Compact padding for smaller devices */
+        font-size: clamp(1.2rem, 4vw, 1.8rem);
     }
 
     .blog img {
@@ -75,42 +76,32 @@ section {
     }
 
     section {
-        gap: 10px; /* Reduce gap on small screens */
+        gap: 10px;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
     .blog h1 {
         font-size: 1.5rem;
-        text-align: center; /* Center-align header for small screens */
+        text-align: center;
     }
 
     .blog p {
-        font-size: 0.9rem; /* Smaller font size for better readability */
-        text-align: justify;
+        font-size: 0.9rem;
     }
 
-    .blog-container {
-        padding: 0 10px; /* Compact padding for edge-to-edge layout */
-    }
-
-    .blog-card {
-        padding: 10px; /* Reduce padding for small screens */
-        width: 100%; /* Full width */
-        margin: 0 auto;
+    .blog {
+        padding: 0 10px;
+        width: 100%;
     }
 
     .blog img {
-        max-width: 100%; /* Ensure the image doesn't overflow */
+        max-width: 100%;
         border-radius: 5px;
     }
 
-    .blog hr {
-        margin: 10px 0;
-    }
-
     section {
-        flex-direction: column; /* Always stack vertically for phones */
+        flex-direction: column;
         gap: 15px;
     }
 }

@@ -21,7 +21,7 @@
 			referrerpolicy="no-referrer"
 		/>
 	</head>
-	<body>
+	<body onscroll="showUpBtn()">
 		<header>
 			<nav>
 				<div class="logo-container">
@@ -112,8 +112,7 @@
 						alt=""
 					/>
 					<div class="info">
-						<h2>Komunitas Gowes Bareng dan Kampanye Car-Free Day: Mendorong Gaya
-							Hidup Berkelanjutan</h2>
+						<h2>Komunitas atau Kegiatan: Mendorong Gaya Hidup Berkelanjutan</h2>
 							<br>
 						<p>Di tengah meningkatnya kesadaran akan isu polusi udara dan
 							perubahan iklim, berbagai inisiatif komunitas dan kampanye telah
@@ -124,7 +123,6 @@
 						<a href="slider3.html" class="btn">Baca Selengkapnya</a>
 					</div>
 				</div>
-
 				<div class="arrow">
 					<div class="left-arrow">
 						<i class="fa-solid fa-chevron-left"></i>
@@ -135,7 +133,9 @@
 				</div>
 			</div>
 		</section>
-
+		<br>
+		<br>
+		<br>
 		<section id="calculator">
 			<div class="calculator">
 				<h1>Kalkulator <span style="color: #4d9e00">Jejak Karbon</span></h1>
@@ -161,12 +161,12 @@
 						/>
 					</div>
 					<div class="form-group">
-						<label for="waste"> Emisi Sampah</label>
+						<label for="waste"> Emisi Sampah Organik</label>
 						<input
 							type="number"
 							id="waste"
 							required
-							placeholder="Sampah yang dihasilkan per minggu (kg)"
+							placeholder="Sampah Organik yang dihasilkan per minggu (kg)"
 						/>
 					</div>
 
@@ -286,9 +286,9 @@
 											type="email"
 											id="input"
 											name="email"
-											placeholder="Enter your email addres"
+											placeholder="Masukkan Email"
 										/>
-										<button type="submit">Register</button>
+										<button type="submit">Kirim</button>
 									</form>
 								</div>
 							</div>
@@ -297,6 +297,9 @@
 				</div>
 			</div>
 		</footer>
+		<button id="upBtn" onclick="backToTop()"><i class="fa-solid fa-arrow-up" id="upBtn-arrow"></i></button>
+		
 	</body>
 	<script src="script.js"></script>
+	<script src="index.js"></script>
 </html>

@@ -21,7 +21,7 @@
 			referrerpolicy="no-referrer"
 		/>
 	</head>
-	<body>
+	<body onscroll="showUpBtn()">
 		<header>
 			<nav>
 				<div class="logo-container">
@@ -260,16 +260,18 @@
 
 				<p>
 					Refrensi:
-					https://dishub.jogjaprov.go.id/bidang-angkutan-darat/10-manfaat-yang-bisa-didapat-saat-naik-angkutan-umum#:~:text=Bersosialisasi%20dengan%20Lingkungan%20dan%20Masyarakat,relasi%20hanya%20karena%20angkutan%20umum.
-					https://www.liputan6.com/citizen6/read/5068493/9-alasan-anda-harus-bersepeda-daripada-mengemudi-kendaraan?page=6
+					<br>
+					<a href="https://dishub.jogjaprov.go.id/bidang-angkutan-darat/10-manfaat-yang-bisa-didapat-saat-naik-angkutan-umum">https://dishub.jogjaprov.go.id/bidang-angkutan-darat/10-manfaat-yang-bisa-didapat-saat-naik-angkutan-umum</a>
+					<br>
+					<a href="https://www.liputan6.com/citizen6/read/5068493/9-alasan-anda-harus-bersepeda-daripada-mengemudi-kendaraan?">https://www.liputan6.com/citizen6/read/5068493/9-alasan-anda-harus-bersepeda-daripada-mengemudi-kendaraan?</a> 
 				</p>
-			<a href="index.html">Kembali</a>
+			<a href="index.html" class="backText">Kembali</a>
 
 			</div>
 
 		</section>
 
-		<footer id="footer">
+        <footer id="footer">
 			<div class="footer-logo">
 				<img src="Image/LOGO ECOMOTION WHITE.png" alt="" />
 			</div>
@@ -317,9 +319,9 @@
 											type="email"
 											id="input"
 											name="email"
-											placeholder="Enter your email addres"
+											placeholder="Masukkan Email"
 										/>
-										<button type="submit">Register</button>
+										<button type="submit">Kirim</button>
 									</form>
 								</div>
 							</div>
@@ -328,6 +330,7 @@
 				</div>
 			</div>
 		</footer>
+		<button id="upBtn" onclick="backToTop()"><i class="fa-solid fa-arrow-up" id="upBtn-arrow"></i></button>
 	</body>
 	<script src="script.js"></script>
 </html>
